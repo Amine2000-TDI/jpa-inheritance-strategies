@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Entity @Data @NoArgsConstructor
 @AllArgsConstructor
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Personne {
     @Id
     @GeneratedValue
