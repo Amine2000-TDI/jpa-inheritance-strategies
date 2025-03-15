@@ -7,11 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity @Data @NoArgsConstructor
-@AllArgsConstructor @Builder
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "TYPE")
-@DiscriminatorValue("PERSONNE")
-public class Personne {
+@AllArgsConstructor
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public abstract class Personne {
     @Id
     @GeneratedValue
     private Long id;

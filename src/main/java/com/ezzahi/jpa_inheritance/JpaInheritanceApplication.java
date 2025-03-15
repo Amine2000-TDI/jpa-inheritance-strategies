@@ -19,7 +19,7 @@ public class JpaInheritanceApplication {
     CommandLineRunner runner(PersonneRepository personneRepository) {
         return args -> {
             // Sauvegarde un étudiant dans la base de données
-            personneRepository.save(new Personne(null,"John", "Doe"));
+           // personneRepository.save(new Personne(null,"John", "Doe"));
             personneRepository.save(new Etudiant(null,"ali","amil",11D,"svt"));
             personneRepository.save(new Professuer(null,"Jane", "Doe",5000D,"casa"));
         };

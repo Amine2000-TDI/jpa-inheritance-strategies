@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 @Entity @Data
 @NoArgsConstructor
-@DiscriminatorValue("ETU")
 public class Etudiant extends Personne{
     private Double note;
     private String filier;

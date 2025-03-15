@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-@DiscriminatorValue("PROF")
 public class Professuer extends Personne{
     private Double salary;
     private String adresse;
